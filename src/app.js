@@ -59,6 +59,7 @@ app.post("/register", async(req, res) => {
             })
             const registered= await registerEmployee.save();
             res.status(201).render("index");
+           
         }else {
             res.send("password are not matching")
         }
@@ -80,7 +81,7 @@ app.post("/login", async(req, res) => {
             const useremail =  await Register.findOne({email: email});
             
             if(useremail.password === password){
-                res.status(201).render("dashboard");
+                res.status(201).render("index");
             }else {
                 res.send("invalid login details");
             }

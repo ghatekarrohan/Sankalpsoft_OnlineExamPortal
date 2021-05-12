@@ -6,12 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>SS-TEST</title>
 
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link href="css/dash-style.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+ 
   
     </head>
     
-<body  class="">
+<body>
+   <header class="item header margin-top-0">
+        <div class="wrapper">
+            {{>navbar}}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="text-pageheader">
+                            <div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.0s">
+                                Dashboard
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
   
     <!-- Header -->
     <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
@@ -57,7 +78,7 @@
               <div class="row align-items-center">
               <div class="col-12 d-flex align-items-center">
                   <h3 class="mb-0">Give Test</h3>
-                  <a href="#" class="ml-auto btn btn-sm btn-primary">Move to the test Page</a>
+                  <a href="taketest" class="ml-auto btn btn-sm btn-primary">Move to the test Page</a>
                 </div>
                 <div class="col text-right">
                   <!-- <a href="#!" class="btn btn-sm btn-primary">See all</a> -->
@@ -104,6 +125,11 @@
 
   </div> 
   
-
+     {{>footer}}
+    {{!-- <script src="js/jquery-.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/anim.js"></script> --}}
 </body> 
+
+
 </html>
